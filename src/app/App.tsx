@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { connect, Dispatch } from 'react-redux';
-import './App.css';
+import './app.css';
 import Header from './header';
 import LeftMenu from './left-menu';
 import { IAppState } from './store/state';
 import { IAction } from './store/action';
 import { AppActions } from './store/actions';
+import Home from './home';
 
 interface IAppComponentProps {
   name: string;
@@ -30,7 +31,7 @@ class App extends React.Component<IAppComponentProps, IComponentState> {
         <Header />
         <section>
           <LeftMenu />
-          <div>Welcome, {this.props.name}</div>
+          <Home />
         </section>
       </div>
     );

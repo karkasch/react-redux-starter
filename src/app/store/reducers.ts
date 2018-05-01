@@ -26,7 +26,7 @@ export function stateReducer(state: IAppState, action: IAction): IAppState {
             return state;
     }
 
-    console.log('New state', newState);
+    console.log('New state: ' + action.type, newState);
     
     return newState;
 }
