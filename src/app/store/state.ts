@@ -1,4 +1,3 @@
-
 export interface IAppState {
     id: number;
     userName: string;
